@@ -1,3 +1,5 @@
+import django_on_heroku # top of the file
+
 """
 Django settings for mysite project.
 
@@ -9,6 +11,8 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+
+
 
 from pathlib import Path
 import os
@@ -143,3 +147,5 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+django_on_heroku.settings(locals())
